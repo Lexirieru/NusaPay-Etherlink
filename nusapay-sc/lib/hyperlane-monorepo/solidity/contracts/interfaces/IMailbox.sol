@@ -53,7 +53,7 @@ interface IMailbox {
         uint32 _destinationDomain,
         bytes32 _recipientAddress,
         bytes calldata _messageBody
-    ) external returns (bytes32);
+    ) external payable returns (bytes32);
 
     function process(bytes calldata _metadata, bytes calldata _message)
         external;
